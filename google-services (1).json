@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442541706087",
+    "project_id": "royal-spin-8cc06",
+    "storage_bucket": "royal-spin-8cc06.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442541706087:android:a387ad98d5a756ddb43dc2",
+        "android_client_info": {
+          "package_name": "Com.royal_spin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbJorv6_5Uf40HT6rzvbBbaWceWdqiJe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
