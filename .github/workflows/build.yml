@@ -21,6 +21,10 @@ jobs:
         run: flutter pub get
       - name: Create Android project
         run: flutter create --platforms=android .
+        - name: Add Firebase config
+          run: cp 
+  google-services.json android/app/
+  google-services.json
       - name: Build APK
         run: flutter build apk --release
 
