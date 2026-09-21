@@ -22,7 +22,10 @@ jobs:
       - name: Create Android project
         run: flutter create --platforms=android .
       - name: Update Kotlin version
-        run: sed -i 's/id("org.jetbrains.kotlin.android") version "2.1.0"/id("org.jetbrains.kotlin.android") version "2.3.0"/' android/settings.gradle.kts 
+        run: sed -i 's/id("org.jetbrains.kotlin.android") version "2.1.0"/id("org.jetbrains.kotlin.android") version "2.3.0"/' android/settings.gradle.kts
+      - name: Fix Kotlin compiler options
+        run: |
+            sed -i '/kotlinOptions {/,/}/c\    kotlin {\n        compilerOptions {\n            jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11\n        }\n    }' android/app/build.gradle.kts
       - name: Build APK
         run: flutter build apk --release
 
